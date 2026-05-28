@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cover from "./slides/Cover";
 import Chapter1 from "./slides/Chapter1";
+import Cursor from "./slides/Cursor";
 
 export default function App() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -23,13 +24,14 @@ export default function App() {
         {slideIndex}
       </p>
       <div
-        className="w-1/2 h-full bg-green-500/20 absolute top-0 left-0"
+        className="z-998 w-1/2 h-full absolute top-0 left-0 hover:cursor-[url(./assets/left-arrow.png),pointer]"
         onClick={prevSlide}
       />
       <div
-        className="w-1/2 h-full bg-blue-500/20 absolute top-0 right-0"
+        className="z-998 w-1/2 h-full absolute top-0 right-0 hover:cursor-[url(./assets/right-arrow.png),pointer]"
         onClick={nextSlide}
       />
+      <Cursor />
       <CurrentSlide />
     </div>
   );
