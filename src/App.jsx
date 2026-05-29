@@ -20,9 +20,9 @@ export default function App() {
 
   return (
     <div className="w-screen h-screen">
-      <p className="absolute top-20 right-20 text-black font-bold text-9xl z-999">
+      {/* <p className="absolute top-20 right-20 text-black font-bold text-9xl z-999">
         {slideIndex}
-      </p>
+      </p> */}
       <div
         className="z-998 w-1/2 h-full absolute top-0 left-0 hover:cursor-[url(./assets/left-arrow.png),pointer]"
         onClick={prevSlide}

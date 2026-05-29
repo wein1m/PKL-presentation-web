@@ -1,1 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "LazyDog";
+  src: url("./assets/Lazydog.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aurelia Emiko";
+  src: url("./assets/AureliaEmiko.otf") format("truetype");
+}
+
+@utility font-lazyDog {
+  font-family: "LazyDog", sans-serif;
+}
+
+@utility font-sora {
+  font-family: "Sora", sans-serif;
+}
+
+@utility font-aureliaEmiko {
+  font-family: "Aurelia Emiko", sans-serif;
+}
+
+body {
+    overflow: none;
+    @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
+}
