@@ -6,7 +6,7 @@ import pointingRightBot from "../assets/pointing-bottom_right.png";
 
 export default function Cover() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center">
+    <div className="page-wrapper">
       <div className="text-center flex flex-col items-center">
         <p className="text-3xl mb-4">
           Presentasi Laporan Praktik Kerja Lapangan

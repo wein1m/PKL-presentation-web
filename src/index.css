@@ -24,6 +24,10 @@
 }
 
 body {
-    overflow: none;
+    overflow: hidden;
     @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
+}
+
+.page-wrapper {
+  @apply w-screen h-screen flex items-center justify-center;
 }
