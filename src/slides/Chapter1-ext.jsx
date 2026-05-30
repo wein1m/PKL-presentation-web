@@ -1,8 +1,9 @@
-import officeOut from "../assets/office-out.png";
-import wavingLeftBot from "../assets/waving-bottom_left.png";
-import pointingRightBot from "../assets/pointing-bottom_right.png";
-import dorritos from "../assets/dorritos.png";
-import rocket from "../assets/rocket.png";
+import officeOut from "../assets/office/ext.png";
+
+import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
+import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
+import dorritos from "../assets/elements/dorritos.png";
+import rocket from "../assets/elements/rocket.png";
 
 export default function Chapter1() {
   return (
@@ -45,24 +46,24 @@ export default function Chapter1() {
           </p>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem]">
+            <div className="p-6">
               <p className="text-lg opacity-60">Pimpinan</p>
               <h3 className="text-2xl font-bold">...</h3>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem]">
+            <div className="p-6">
               <p className="text-lg opacity-60">Website</p>
               <h3 className="text-2xl font-bold">kodingakademi.id</h3>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] col-span-2">
+            <div className="p-6 col-span-2">
               <p className="text-lg opacity-60">Alamat</p>
-              <h3 className="text-2xl font-bold leading-relaxed">
+              <h3 className="text-2xl font-bold leading-relaxed w-full">
                 Jl. Tukad Batanghari No. 55, Denpasar, Bali
               </h3>
             </div>
           </div>
-          <img src={dorritos} class="absolute -top-20 right-20 w-44" />
+          <img src={dorritos} className="absolute -top-20 right-20 w-44" />
         </div>
       </div>
 

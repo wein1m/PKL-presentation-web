@@ -1,8 +1,8 @@
-import swiggleUnderline from "../assets/swiggle-underline.png";
-import wavingLeftBot from "../assets/waving-bottom_left.png";
-import pointingLeftTop from "../assets/pointing-top_left.png";
-import writingRightTop from "../assets/writing-top_right.png";
-import pointingRightBot from "../assets/pointing-bottom_right.png";
+import swiggleUnderline from "../assets/elements/swiggle-underline.png";
+import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
+import pointingLeftTop from "../assets/elements/pointing-top_left.png";
+import writingRightTop from "../assets/elements/writing-top_right.png";
+import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 
 export default function Cover() {
   return (

@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: "LazyDog";
-  src: url("./assets/Lazydog.otf") format("truetype");
+  src: url("./assets/fonts/Lazydog.otf") format("truetype");
 }
 
 @font-face {
   font-family: "Aurelia Emiko";
-  src: url("./assets/AureliaEmiko.otf") format("truetype");
+  src: url("./assets/fonts/AureliaEmiko.otf") format("truetype");
 }
 
 @utility font-lazyDog {
