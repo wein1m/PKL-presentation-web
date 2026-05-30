@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Cover from "./slides/Cover";
-import Chapter1 from "./slides/Chapter1";
+import Chapter1Ext from "./slides/Chapter1-ext";
 import Cursor from "./slides/Cursor";
 
 export default function App() {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const slides = [Cover, Chapter1];
+  const slides = [Cover, Chapter1Ext];
   const CurrentSlide = slides[slideIndex];
 
   const nextSlide = () => {
