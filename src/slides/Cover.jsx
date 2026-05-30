@@ -12,6 +12,10 @@ export default function Cover() {
           Presentasi Laporan Praktik Kerja Lapangan
         </p>
         <h1 className="text-9xl font-bold ">Koding Akademi</h1>
+        <div>
+          <p className="text-2xl">by Made Yodha Waradana Udita</p>
+          <p className="text-2xl">7121 • XI RPL 3</p>
+        </div>
         <img src={swiggleUnderline} alt="underline" className="mt-4" />
       </div>
 
