@@ -24,14 +24,19 @@
 }
 
 body {
+  background: #000;
+}
+
+.slides-wrapper {
   overflow: hidden;
+  @apply will-change-transform backface-hidden;
   @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
-  @apply bg-[radial-gradient(#00000015_2px,transparent_1px)] bg-[size:16px_16px];
+  @apply bg-[radial-gradient(#00000010_2px,transparent_1px)] bg-[size:16px_16px];
 }
 
 @layer components {
   .page-wrapper {
-    @apply w-screen h-screen flex items-center justify-center overflow-hidden relative;
+    @apply w-full h-full flex items-center justify-center overflow-hidden relative;
   }
 
   .content-wrapper {

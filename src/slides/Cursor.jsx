@@ -1,6 +1,9 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
+import rightArrow from "../assets/cursors/right-arrow.png";
+import leftArrow from "../assets/cursors/left-arrow.png";
+
 export default function Cursor() {
   const cursorRef = useRef(null);
 
@@ -8,6 +11,8 @@ export default function Cursor() {
     x: typeof window !== "undefined" ? window.innerWidth / 2 : 0,
     y: typeof window !== "undefined" ? window.innerHeight / 2 : 0,
   });
+
+  const screenHalf = window.innerWidth / 2;
 
   useEffect(() => {
     if (!cursorRef.current) return;
@@ -22,6 +27,12 @@ export default function Cursor() {
           gsap.set(cursorRef.current, { x: pos.current.x, y: pos.current.y });
         },
       });
+
+      if (e.clientX < screenHalf) {
+        document.body.style.cursor = `url(${leftArrow}), pointer`;
+      } else {
+        document.body.style.cursor = `url(${rightArrow}), pointer`;
+      }
     };
 
     window.addEventListener("mousemove", onMove);
