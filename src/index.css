@@ -26,6 +26,7 @@
 body {
   overflow: hidden;
   @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
+  @apply bg-[radial-gradient(#00000015_2px,transparent_1px)] bg-[size:16px_16px];
 }
 
 @layer components {

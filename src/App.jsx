@@ -4,12 +4,13 @@ import Chapter1Ext from "./slides/Chapter1-ext";
 import Chapter1Int from "./slides/Chapter1-int";
 import Chapter2Tools from "./slides/Chapter2-tools";
 import Chapter2Projects from "./slides/Chapter2-projects";
+import End from "./slides/End";
 import Cursor from "./slides/Cursor";
 
 export default function App() {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const slides = [Cover, Chapter1Ext, Chapter1Int, Chapter2Tools, Chapter2Projects];
+  const slides = [Cover, Chapter1Ext, Chapter1Int, Chapter2Tools, Chapter2Projects, End];
   const CurrentSlide = slides[slideIndex];
 
   const nextSlide = () => {
