@@ -24,10 +24,32 @@
 }
 
 body {
-    overflow: hidden;
-    @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
+  overflow: hidden;
+  @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
 }
 
 .page-wrapper {
   @apply w-screen h-screen flex items-center justify-center;
+}
+
+@layer components {
+  .transparent-card {
+    @apply p-6;
+
+    p {
+      @apply text-lg opacity-60;
+    }
+
+    h3 {
+      @apply text-2xl font-bold mt-2;
+    }
+  }
+
+  .card-wrapper {
+    @apply border-[3px] border-black rounded-[2.5rem] bg-white p-6 shadow-[8px_8px_0px_#000];
+  }
+
+  .small-pill-wrapper {
+    @apply border-[3px] border-black px- py-1 rounded-full -rotate-6 font-bold shadow-[5px_5px_0px_#000];
+  }
 }
