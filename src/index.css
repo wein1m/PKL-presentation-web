@@ -28,11 +28,33 @@ body {
   @apply font-lazyDog bg-[#f9f2e9] text-[#232428];
 }
 
-.page-wrapper {
-  @apply w-screen h-screen flex items-center justify-center;
-}
-
 @layer components {
+  .page-wrapper {
+    @apply w-screen h-screen flex items-center justify-center overflow-hidden relative;
+  }
+
+  .content-wrapper {
+    @apply flex items-center justify-center px-40 h-full;
+
+    .content-section {
+      @apply flex flex-col gap-4 relative;
+
+      .title {
+        p {
+          @apply text-2xl opacity-70 mb-2;
+        }
+
+        h1 {
+          @apply text-7xl font-black leading-none;
+        }
+      }
+
+      .desc {
+        @apply text-2xl leading-relaxed opacity-80;
+      }
+    }
+  }
+
   .transparent-card {
     @apply p-6;
 
@@ -49,7 +71,12 @@ body {
     @apply border-[3px] border-black rounded-[2.5rem] bg-white p-6 shadow-[8px_8px_0px_#000];
   }
 
+  .cards-container {
+    @apply grid grid-cols-2 gap-4;
+  }
+
   .small-pill-wrapper {
-    @apply border-[3px] border-black px- py-1 rounded-full -rotate-6 font-bold shadow-[5px_5px_0px_#000];
+    @apply border-[3px] border-black px-6 py-1 rounded-full -rotate-6 shadow-[5px_5px_0px_#000];
+    @apply text-xl font-bold font-black;
   }
 }

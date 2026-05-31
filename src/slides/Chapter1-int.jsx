@@ -21,63 +21,54 @@ export default function Chapter1Int() {
   ];
 
   return (
-    <div className="page-wrapper relative overflow-hidden">
-      <div className="flex h-full items-center px-48 gap-16 relative z-10">
+    <section className="page-wrapper">
+      <div className="content-wrapper gap-16">
         {/* 🐰 ---------- LEFT SIDE ----------- 🐰 */}
-        <div className="w-1/2 flex flex-col gap-4 relative">
-          <div>
-            <p className="text-2xl opacity-70 mb-2">Lingkungan Kerja</p>
-
-            <h1 className="text-7xl font-black leading-none">
-              Kondisi Ruangan
-            </h1>
+        <div className="w-1/2 content-section">
+          <div className="title">
+            <p>Lingkungan Kerja</p>
+            <h1>Kondisi Ruangan</h1>
           </div>
 
-          <p className="text-2xl leading-relaxed opacity-80 max-w-[90%]">
+          <p className="desc">
             Lingkungan kerja di Koding Akademi memiliki suasana yang nyaman,
             modern, dan mendukung produktivitas. Dengan konsep ruang kerja yang
             minimalis serta area kerja yang tertata rapi, suasana kerja terasa
             santai namun tetap profesional dan kolaboratif.
           </p>
 
-          <div className="grid grid-cols-2 gap-5 mt-4">
-            <div className="p-6">
-              <p className="text-lg opacity-60">Suasana</p>
-
-              <h3 className="text-2xl font-bold mt-2">Cozy & Kolaboratif</h3>
+          <div className="cards-container mt-4">
+            <div className="transparent-card">
+              <p>Suasana</p>
+              <h3>Cozy & Kolaboratif</h3>
             </div>
 
-            <div className="p-6">
-              <p className="text-lg opacity-60">Fasilitas</p>
-
-              <h3 className="text-2xl font-bold mt-2">AC, WiFi & Whiteboard</h3>
+            <div className="transparent-card">
+              <p>Fasilitas</p>
+              <h3>AC, WiFi & Whiteboard</h3>
             </div>
 
-            <div className="p-6">
-              <p className="text-lg opacity-60">Area Kerja</p>
-
-              <h3 className="text-2xl font-bold mt-2">Fleksibel & Nyaman</h3>
+            <div className="transparent-card">
+              <p>Area Kerja</p>
+              <h3>Fleksibel & Nyaman</h3>
             </div>
 
-            <div className="p-6">
-              <p className="text-lg opacity-60">Lingkungan</p>
-
-              <h3 className="text-2xl font-bold mt-2">Bersih & Modern</h3>
+            <div className="transparent-card">
+              <p>Lingkungan</p>
+              <h3>Bersih & Modern</h3>
             </div>
           </div>
 
-          <img src={dorritos} className="absolute -top-18 -right-20 w-44" />
+          <img src={dorritos} className="absolute -top-18 -right-12 -rotate-4 w-44" />
         </div>
 
         {/* 🐰 ---------- RIGHT SIDE ----------- 🐰 */}
         <div className="w-1/2 relative flex items-center justify-center">
-          <div className="absolute top-2 right-20 z-20">
-            <div className="bg-yellow-300 text-black px-6 py-3 rounded-full rotate-8 font-bold shadow-xl">
-              Cozy Workspace
-            </div>
+          <div className="small-pill-wrapper bg-yellow-300 z-999 rotate-8 absolute top-6 right-20">
+            Cozy Workspace
           </div>
 
-          <div className="scale-110">
+          <div className="scale-110 z-998">
             <BounceCards
               images={images}
               containerWidth={200}
@@ -107,6 +98,6 @@ export default function Chapter1Int() {
         alt=""
         className="absolute top-20 right-20 w-[10rem] -rotate-10"
       />
-    </div>
+    </section>
   );
 }

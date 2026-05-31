@@ -6,7 +6,7 @@ import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 
 export default function Cover() {
   return (
-    <div className="page-wrapper">
+    <section className="page-wrapper">
       <div className="text-center flex flex-col items-center">
         <p className="text-3xl mb-4">
           Presentasi Laporan Praktik Kerja Lapangan
@@ -39,6 +39,6 @@ export default function Cover() {
         alt="waving-hand"
         className="absolute bottom-0 right-0 w-[25rem]"
       />
-    </div>
+    </section>
   );
 }

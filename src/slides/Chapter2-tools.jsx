@@ -51,19 +51,16 @@ export default function Chapter2Tools() {
   ];
 
   return (
-    <div className="page-wrapper relative overflow-hidden">
-      <div className="px-48 h-full flex flex-row justify-center items-center relative gap-20">
-        {/* 🐰 ---------- LEFT SIDE ----------- 🐰 */}
-        <div className="w-[45%] mb-16 relative">
-          <p className="text-2xl opacity-70 mb-2">Pengalaman Mengajar</p>
+    <section className="page-wrapper">
+      <div className="content-wrapper justify-center gap-20">
+        {/* 🐰 ---------- LEFT SIDE (CONTENT)----------- 🐰 */}
+        <div className="w-[45%] content-section">
+          <div className="title">
+            <p>Pengalaman Mengajar</p>
+            <h1>Platform Pembelajaran</h1>
+          </div>
 
-          <h1 className="text-7xl font-black leading-none mb-6">
-            Platform
-            <br />
-            Pembelajaran
-          </h1>
-
-          <p className="text-2xl leading-relaxed opacity-80">
+          <p className="desc">
             Selama kegiatan PKL di Koding Akademi, saya menggunakan berbagai
             platform pembelajaran interaktif untuk membantu proses mengajar
             coding, game development, AI, dan robotics kepada siswa dari
@@ -73,15 +70,15 @@ export default function Chapter2Tools() {
           <img
             src={dorritos}
             alt=""
-            className="absolute -top-18 right-26 w-40 -rotate-12"
+            className="absolute -top-18 right-32 w-40 -rotate-12"
           />
         </div>
 
-        <div className="w-[55%] h-fit grid grid-cols-2 gap-8 relative z-10">
+        <div className="w-[55%] h-fit grid grid-cols-2 gap-8 relative z-999 hover:cursor-default">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className={`${tool.rotate} card-wrapper hover:translate-y-[-8px] transition-all duration-300 `}
+              className={`${tool.rotate} card-wrapper hover:translate-y-2 transition-all duration-300`}
             >
               <div className="flex items-center gap-5 mb-5">
                 <div className="w-20 h-20">
@@ -103,18 +100,6 @@ export default function Chapter2Tools() {
             </div>
           ))}
         </div>
-
-        {/* <div className="absolute top-24 right-44">
-          <div className="bg-yellow-300 border-[3px] border-black px-6 py-3 rounded-full rotate-6 font-bold shadow-[5px_5px_0px_#000]">
-            Creative Coding 🎮
-          </div>
-        </div>
-
-        <div className="absolute bottom-24 left-32">
-          <div className="bg-pink-300 ">
-            AI & Robotics 🤖
-          </div>
-        </div> */}
       </div>
 
       <img
@@ -134,6 +119,6 @@ export default function Chapter2Tools() {
         alt=""
         className="absolute top-16 left-20 w-[9rem] -rotate-6"
       />
-    </div>
+    </section>
   );
 }
