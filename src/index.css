@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -7,20 +6,17 @@
 }
 
 @font-face {
-  font-family: "Aurelia Emiko";
-  src: url("./assets/fonts/AureliaEmiko.otf") format("truetype");
+  font-family: "Sniglet";
+  src: url("./assets/fonts/Sniglet.ttf") format("truetype");
 }
 
 @utility font-lazyDog {
   font-family: "LazyDog", sans-serif;
 }
 
-@utility font-sora {
-  font-family: "Sora", sans-serif;
-}
-
-@utility font-aureliaEmiko {
-  font-family: "Aurelia Emiko", sans-serif;
+@utility font-sniglet {
+  font-family: "Sniglet", sans-serif;
+  font-weight: 600;
 }
 
 body {
@@ -56,7 +52,7 @@ body {
       }
 
       .desc {
-        @apply text-2xl leading-relaxed opacity-80;
+        @apply text-2xl leading-relaxed opacity-60 tracking-wider font-sniglet;
       }
     }
   }
@@ -65,7 +61,7 @@ body {
     @apply p-6;
 
     p {
-      @apply text-lg opacity-60;
+      @apply text-lg opacity-60 font-sniglet tracking-widest;
     }
 
     h3 {

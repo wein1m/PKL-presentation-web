@@ -94,7 +94,7 @@ export default function Chapter2Tools() {
                 </h2>
               </div>
 
-              <p className="text-lg leading-relaxed opacity-80">
+              <p className="text-lg leading-relaxed opacity-80 font-sniglet tracking-wider">
                 {tool.description}
               </p>
             </div>

@@ -45,8 +45,8 @@ export default function End() {
           alt="underline"
           className="mt-5 w-[24rem]"
         />
-        <div className="mt-10 flex flex-col gap-2">
-          <p className="text-2xl font-semibold">
+        <div className="mt-10 flex flex-col gap-2 font-sniglet tracking-wider">
+          <p className="text-2xl">
             Terima kasih telah menyimak presentasi ini !!
           </p>
 
@@ -71,7 +71,7 @@ export default function End() {
             <h3 className="text-3xl font-black">XI RPL 3</h3>
           </div>
         </div>
-        <div className="mt-10 text-sm opacity-50 tracking-[0.3em]">
+        <div className="mt-10 text-sm opacity-50 font-sniglet tracking-[0.3em]">
           7121 • PKL PRESENTATION • 2026
         </div>
       </div>

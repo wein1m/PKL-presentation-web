@@ -14,7 +14,7 @@ export default function Cover() {
 
         <h1 className="text-9xl font-bold ">Koding Akademi</h1>
         <div>
-          <div>
+          <div className="font-sniglet tracking-widest">
             <p className="text-2xl">by Made Yodha Waradana Udita</p>
             <p className="text-2xl">7121 • XI RPL 3</p>
           </div>

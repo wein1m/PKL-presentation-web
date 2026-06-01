@@ -114,13 +114,13 @@ export default function Chapter2Projects() {
               </div>
 
               <div className="px-2">
-                <p className="text-sm opacity-60 mb-2">{project.tech}</p>
+                <p className="text-sm opacity-60 mb-2 font-sniglet tracking-widest">{project.tech}</p>
 
                 <h2 className="text-3xl font-black leading-none mb-4">
                   {project.title}
                 </h2>
 
-                <p className="text-lg leading-relaxed opacity-80">
+                <p className="text-lg leading-relaxed opacity-80 font-sniglet tracking-wider">
                   {project.description}
                 </p>
               </div>
