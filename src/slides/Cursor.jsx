@@ -17,6 +17,29 @@ export default function Cursor() {
   useEffect(() => {
     if (!cursorRef.current) return;
 
+    const onClick = (e) => {
+      const ripple = document.createElement("div");
+
+      ripple.className =
+        "absolute inset-0 rounded-full bg-blue-300/50 pointer-events-none size-10";
+
+      cursorRef.current.appendChild(ripple);
+
+      gsap.fromTo(
+        ripple,
+        { scale: 0, opacity: 1 },
+        {
+          scale: 4,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.out",
+          onComplete: () => {
+            ripple.remove();
+          },
+        },
+      );
+    };
+
     const onMove = (e) => {
       gsap.to(pos.current, {
         x: e.clientX,
@@ -36,14 +59,18 @@ export default function Cursor() {
     };
 
     window.addEventListener("mousemove", onMove);
+    window.addEventListener("click", onClick);
 
-    return () => window.removeEventListener("mousemove", onMove);
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("click", onClick);
+    };
   }, []);
 
   return (
     <div
       ref={cursorRef}
-      className="z-997 absolute top-2 left-2 -translate-y-1/2 -translate-x-1/2 size-10 bg-blue-300/50 rounded-full"
+      className="pointer-events-none z-997 absolute top-2 left-2 -translate-y-1/2 -translate-x-1/2 size-10 bg-blue-300/50 rounded-full"
     />
   );
 }
