@@ -45,6 +45,11 @@ export default function Chapter2Projects() {
 
   const handleMouseEnter = (e) => {
     const video = e.currentTarget.querySelector("video");
+    const btn = e.currentTarget.querySelector("#play-btn");
+
+    if (btn) {
+      btn.style.display = "none";
+    }
 
     if (video) {
       video.currentTime = 0;
@@ -54,6 +59,11 @@ export default function Chapter2Projects() {
 
   const handleMouseLeave = (e) => {
     const video = e.currentTarget.querySelector("video");
+    const btn = e.currentTarget.querySelector("#play-btn");
+
+    if (btn) {
+      btn.style.display = "flex";
+    }
 
     if (video) {
       video.pause();
@@ -97,7 +107,7 @@ export default function Chapter2Projects() {
                 <img
                   src={project.thumbnail}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:opacity-0 transition-all duration-300"
+                  className="w-full h-full object-cover"
                 />
 
                 <video
@@ -111,10 +121,30 @@ export default function Chapter2Projects() {
                 <div className="small-pill-wrapper bg-yellow-300 text-sm rotate-6 shadow-[4px_4px_0px_#000] absolute top-5 right-5">
                   Preview
                 </div>
+
+                <div
+                  id="play-btn"
+                  className="absolute inset-0 w-full h-full bg-black/20"
+                >
+                  <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 size-14 rounded-full bg-black/50 flex items-center justify-center hover:hidden">
+                    <div
+                      style={{
+                        width: 0,
+                        height: 0,
+                        borderTop: "10px solid transparent",
+                        borderBottom: "10px solid transparent",
+                        borderLeft: "18px solid white",
+                        marginLeft: "4px",
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
 
               <div className="px-2">
-                <p className="text-sm opacity-60 mb-2 font-sniglet tracking-widest">{project.tech}</p>
+                <p className="text-sm opacity-60 mb-2 font-sniglet tracking-widest">
+                  {project.tech}
+                </p>
 
                 <h2 className="text-3xl font-black leading-none mb-4">
                   {project.title}
