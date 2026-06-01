@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Cover from "./slides/Cover";
 import Chapter1Ext from "./slides/Chapter1-ext";
@@ -74,6 +74,35 @@ export default function App() {
       nextSlide();
     }
   };
+
+  const throttledRef = useRef(false);
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "ArrowRight") nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+    };
+
+    const handleScroll = (e) => {
+      if (throttledRef.current) return;
+
+      throttledRef.current = true;
+
+      if (e.deltaY > 0) nextSlide();
+      if (e.deltaY < 0) prevSlide();
+
+      setTimeout(() => {
+        throttledRef.current = false;
+      }, 600);
+    };
+
+    document.addEventListener("keydown", handleKey);
+    document.addEventListener("wheel", handleScroll);
+
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.removeEventListener("wheel", handleScroll);
+    };
+  }, [slideIndex]);
 
   return (
     <div
