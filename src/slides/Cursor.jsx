@@ -5,6 +5,7 @@ import rightArrow from "../assets/cursors/right-arrow.png";
 import leftArrow from "../assets/cursors/left-arrow.png";
 
 export default function Cursor() {
+  const isMobile = window.innerWidth < 768;
   const cursorRef = useRef(null);
 
   const pos = useRef({
@@ -67,7 +68,9 @@ export default function Cursor() {
     };
   }, []);
 
-  return (
+  return isMobile ? (
+    <div ref={cursorRef} />
+  ) : (
     <div
       ref={cursorRef}
       className="pointer-events-none z-997 absolute top-2 left-2 -translate-y-1/2 -translate-x-1/2 size-10 bg-blue-300/50 rounded-full"
