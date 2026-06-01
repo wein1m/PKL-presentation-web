@@ -85,13 +85,13 @@ export default function Chapter2Projects() {
         </div>
 
         {/* 🐰 ---------- BOTTOM ----------- 🐰 */}
-        <div className="w-full  flex items-center gap-8 z-999">
+        <div className="w-full flex items-center gap-8 z-999">
           {projects.map((project, index) => (
             <div
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className={`${project.rotate} card-wrapper h-full overflow-hidden relative hover:-translate-y-2 transition-all duration-300 group cursor-pointer`}
+              className={`${project.rotate} no-slide-nav card-wrapper h-full overflow-hidden relative hover:-translate-y-2 transition-all duration-300 group cursor-pointer`}
             >
               <div className="relative rounded-[2rem] overflow-hidden mb-6">
                 <img

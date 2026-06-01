@@ -78,7 +78,7 @@ export default function Chapter2Tools() {
           {tools.map((tool, index) => (
             <div
               key={index}
-              className={`${tool.rotate} card-wrapper hover:translate-y-2 transition-all duration-300`}
+              className={`${tool.rotate} no-slide-nav card-wrapper hover:translate-y-2 transition-all duration-300`}
             >
               <div className="flex items-center gap-5 mb-5">
                 <div className="w-20 h-20">

@@ -13,14 +13,14 @@ export default function Cover() {
         </p>
 
         <h1 className="text-9xl font-bold ">Koding Akademi</h1>
+        <div>
+          <div>
+            <p className="text-2xl">by Made Yodha Waradana Udita</p>
+            <p className="text-2xl">7121 • XI RPL 3</p>
+          </div>
+        </div>
 
         <img src={swiggleUnderline} alt="underline" className="mt-4" />
-
-        <div className="mt-14 rotate-[-2deg] card-wrapper px-8 py-5">
-          <p className="text-lg opacity-60 mb-1">Presented by</p>
-          <h3 className="text-3xl font-black">Made Yodha Waradana Udita</h3>
-          <p className="text-lg mt-2 opacity-70">XI RPL 3 • 7121</p>
-        </div>
       </div>
 
       <img

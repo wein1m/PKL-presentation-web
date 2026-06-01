@@ -68,7 +68,7 @@ export default function Chapter1Int() {
             Cozy Workspace
           </div>
 
-          <div className="scale-110 z-998">
+          <div className="scale-110 z-998 no-slide-nav">
             <BounceCards
               images={images}
               containerWidth={200}
