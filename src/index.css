@@ -23,6 +23,11 @@ body {
   background: #000;
 }
 
+::selection {
+  background-color: #bdb29680;
+  cursor: text;
+}
+
 .slides-wrapper {
   overflow: hidden;
   @apply will-change-transform backface-hidden;

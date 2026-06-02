@@ -7,7 +7,8 @@ import Chapter2Tools from "./slides/Chapter2-tools";
 import Chapter2Projects from "./slides/Chapter2-projects";
 import End from "./slides/End";
 
-import Cursor from "./slides/Cursor";
+import Cursor from "./Cursor";
+import MobileWarning from "./MobileWarning";
 
 const DEFAULT_WIDTH = 1764;
 const DEFAULT_HEIGHT = 974;
@@ -109,6 +110,7 @@ export default function App() {
       className="w-screen h-screen overflow-hidden flex items-center justify-center relative"
       onClick={handleNav}
     >
+      <MobileWarning />
       <Cursor />
 
       <div

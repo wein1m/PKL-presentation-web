@@ -1,8 +1,8 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-import rightArrow from "../assets/cursors/right-arrow.png";
-import leftArrow from "../assets/cursors/left-arrow.png";
+import rightArrow from "./assets/cursors/right-arrow.png";
+import leftArrow from "./assets/cursors/left-arrow.png";
 
 export default function Cursor() {
   const isMobile = window.innerWidth < 768;
