@@ -1,9 +1,9 @@
 import BounceCards from "../components/BounceCards";
 
 import int1 from "../assets/office/int-1.png";
-import int2 from "../assets/office/int-2.png";
+import int2 from "../assets/office/int-2.jpeg";
 import int3 from "../assets/office/int-3.png";
-import int4 from "../assets/office/int-4.png";
+import int4 from "../assets/office/int-4.jpeg";
 
 import dorritos from "../assets/elements/dorritos.png";
 import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
@@ -11,7 +11,7 @@ import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 import rocket from "../assets/elements/rocket.png";
 
 export default function Chapter1Int() {
-  const images = [int4, int1, int3, int2];
+  const images = [int2, int1, int3, int4];
 
   const transformStyles = [
     "rotate(5deg) translate(-180px)",
