@@ -86,4 +86,9 @@ body {
     @apply border-[3px] border-black px-6 py-1 rounded-full -rotate-6 shadow-[5px_5px_0px_#000];
     @apply text-xl font-bold font-black;
   }
+
+  .bookmark-tabs {
+    @apply relative bg-pink-400 text-white pr-10 pl-4 py-2 h-10 font-bold tracking-widest;
+    clip-path: polygon(0 0, 90% 0, 82% 50%, 90% 100%, 0 100%);
+  }
 }

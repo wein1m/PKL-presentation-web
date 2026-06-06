@@ -11,6 +11,7 @@ import dorritos from "../assets/elements/dorritos.png";
 import rocket from "../assets/elements/rocket.png";
 import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
 import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
+import Tutorial from "../components/Tutorial";
 
 export default function Chapter2Projects() {
   const projects = [
@@ -176,6 +177,8 @@ export default function Chapter2Projects() {
         alt=""
         className="absolute top-16 right-24 w-[8rem] rotate-12"
       />
+
+      <Tutorial />
     </section>
   );
 }
