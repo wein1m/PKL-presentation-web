@@ -39,13 +39,43 @@
   "pictoblox_tutorial": [
     {
       "image": "/src/assets/projects/pictoblox/one.png",
-      "title": "1. Buat Project Baru di Pictoblox",
-      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+      "title": "1. Buat Project Baru di Pictoblox AI",
+      "desc": "Buka <a class='link'>pictoblox.ai</a> dan buat project baru dengan memilih opsi \"Blocks\" di bagian kiri (Block Coding)."
     },
     {
-      "image": "/src/assets/projects/chatbot/two.jpeg",
-      "title": "2. Download Library Groq",
-      "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+      "image": "/src/assets/projects/pictoblox/two.png",
+      "title": "2. Ganti Sprites dan Backdrops",
+      "desc": "Setelah membuat project baru, dilanjutkan dengan menambahkan sprites & backdrop seperti yang ditunjukkan pada gambar. Ingat untuk menghapus sprite default yang diberikan!"
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/three.png",
+      "title": "3. Install Face Detection Extension",
+      "desc": "Sebelum memulai membuat program, kita perlu menambahkan terlebih dahulu <a style='font-style: italic'>Face Detection Extension</a> agar dapat melakukan face detection pada program kita nanti."
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/four.png",
+      "title": "4. Buat Kode Sambutan",
+      "desc": "Setelah selesai melakukan semua setup project kita, dilanjutkan dengan meng-klik sprite <a style='font-style: italic'>Isaac</a> dan membuat kode untuk sambutan user, serta mengembalikan <a style='font-style: italic'>project states</a> menjadi default."
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/five.png",
+      "title": "5. Kode untuk Button 2 (Register Face)",
+      "desc": "Kemudian klik sprite <a style='font-style: italic'>Button 2</a> dan melakukan inisialisasi sprite dan memberi signal <a style='font-style: italic'>register_face</a> ketika di klik."
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/six.png",
+      "title": "6. Kode untuk Button (Enter School)",
+      "desc": "Dilanjutkan dengan sprite <a style='font-style: italic'>Button</a> dan melakukan inisialisasi sprite dan memberi signal <a style='font-style: italic'>enter_school</a> ketika di klik."
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/seven.png",
+      "title": "7. Proses register_face",
+      "desc": "Selanjutnya, kembali ke sprite <a style='font-style: italic'>Isaac</a> dan buat kode untuk menambahkan wajah kedalam database."
+    },
+    {
+      "image": "/src/assets/projects/pictoblox/eight.png",
+      "title": "8. Proses enter_school",
+      "desc": "Terakhir, kita buat kode untuk melakukan pengecekan, apakah wajah yang ter-detect kamera tersimpan dalam database? jika iya, maka user bisa masuk ke kelas, jika tidak, maka beri output saja."
     }
   ],
   "game_tutorial": [
