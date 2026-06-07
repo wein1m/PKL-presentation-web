@@ -93,4 +93,9 @@ body {
     @apply selection:bg-red-500;
     clip-path: polygon(0 0, 90% 0, 82% 50%, 90% 100%, 0 100%);
   }
+
+  .link {
+    color: #323cbe;
+    text-decoration: underline;
+  }
 }

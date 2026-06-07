@@ -3,12 +3,37 @@
     {
       "image": "/src/assets/projects/chatbot/one.jpeg",
       "title": "1. Buat Project Baru di Google Colab",
-      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+      "desc": "Buka <a class='link'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
     },
     {
       "image": "/src/assets/projects/chatbot/two.jpeg",
-      "title": "2. Download Library Groq",
+      "title": "2. Menginstall Library Groq",
       "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/three.jpeg",
+      "title": "3. Masuk dan Buat Akun Groq",
+      "desc": "Dilanjutkan dengan membuka website <a class='link'>console.groq.com</a> dan login menggunakan akun <a style='font-style: italic'>Google / Github / Email</a> anda."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/four.jpeg",
+      "title": "4. Import API Key",
+      "desc": "Setelah memiliki akun, dilanjutkan ke <a style='font-style: italic'>page API Keys</a> untuk membuat API Key. Masukan semua informasi yang dibutuhkan, lalu klik submit dan copy API Key anda."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/five.jpeg",
+      "title": "5. Masukkan API Key Kedalam Code",
+      "desc": "Kemudian masukkan API Key yang anda dapatkan sebelumnya, dengan cara buat cell dibawahnya lalu ikuti kode seperti pada gambar (ingat untuk mengganti API Key dengan punya anda)."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/six.jpeg",
+      "title": "6. Membuat Program Chatbot",
+      "desc": "Setelah selesai melakukan setup Groq, dilanjutkan dengan membuat code untuk menggunakan Groq kedalam program <a style='font-style: italic'>Chatbot</a>."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/seven.jpeg",
+      "title": "7. Hasil Akhir Program",
+      "desc": "Setelah semua langkah sudah selesai dilakukan, <a style='font-style: italic'>Chatbot</a> kita sudah siap digunakan. Pengguna dapat menanyakan hal apapun kepada <a style='font-style: italic'>Chatbot</a> kita."
     }
   ],
   "pictoblox_tutorial": [
