@@ -5,10 +5,6 @@ import data from "../tutorial_content.json";
 export default function Tutorial({ index, setIndex, kill }) {
   const [stepId, setStepId] = useState(0);
 
-  useEffect(() => {
-    setStepId(0);
-  }, [index]);
-
   let currTutorial;
   switch (index) {
     case 0:
@@ -35,6 +31,11 @@ export default function Tutorial({ index, setIndex, kill }) {
     if (stepId > 0) {
       setStepId((prev) => prev - 1);
     }
+  };
+
+  const changeTutor = (id) => {
+    setIndex(id);
+    setStepId(0);
   };
 
   return (
@@ -104,19 +105,19 @@ export default function Tutorial({ index, setIndex, kill }) {
         <div className="absolute top-20 -right-46">
           <div className="flex flex-col gap-4 w-46">
             <div
-              onClick={() => setIndex(0)}
+              onClick={() => changeTutor(0)}
               className={`bookmark-tabs ${index != 0 ? "w-10 text-transparent" : "hover:pl-4"}`}
             >
               AI Chatbot
             </div>
             <div
-              onClick={() => setIndex(1)}
+              onClick={() => changeTutor(1)}
               className={`bookmark-tabs ${index != 1 ? "w-10 text-transparent" : "hover:pl-4"} bg-blue-400`}
             >
               PictoBlox AI
             </div>
             <div
-              onClick={() => setIndex(2)}
+              onClick={() => changeTutor(2)}
               className={`bookmark-tabs ${index != 2 ? "w-10 text-transparent" : "hover:pl-4"} bg-green-400`}
             >
               Construct 3
