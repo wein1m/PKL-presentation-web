@@ -9,6 +9,7 @@ import End from "./slides/End";
 
 import Cursor from "./Cursor";
 import MobileWarning from "./MobileWarning";
+import DebugSize from "./DebugSize";
 
 const DEFAULT_WIDTH = 1764;
 const DEFAULT_HEIGHT = 974;
