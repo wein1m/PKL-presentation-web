@@ -45,23 +45,41 @@ export default function Tutorial({ index, setIndex, kill }) {
     >
       <div className="relative flex flex-col justify-between gap-6 p-10 bg-[#f9f2e9] w-[80rem] h-[54rem] rounded-3xl">
         {/* 🐰 ---------- CONTENTS ----------- 🐰 */}
-        <div className="flex flex-col w-full h-fit">
-          <div className="h-[36rem]">
-            <img
-              src={step.image}
-              className="w-full h-full object-cover rounded-2xl border-2 border-black"
-            />
+        {stepId === 0 ? (
+          <div className="flex flex-col mx-auto  w-full h-fit -m-2">
+            <h1 className="small-pill-wrapper bg-yellow-300 -rotate-2 w-fit text-3xl font-bold text-black -mt-2 mb-6 mx-auto">
+              {step.title}
+            </h1>
+            <div className="h-[42rem] bg-[#bdb29696] rounded-2xl">
+              <video
+                src={step.video}
+                controls={true}
+                autoPlay={true}
+                className="w-full h-full object-cover rounded-2xl bordr-2 border-black"
+              />
+            </div>
           </div>
-          <div className="max-w-5xl">
-            <h1 className="text-4xl font-bold text-black mt-8">{step.title}</h1>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: step.desc,
-              }}
-              className="text-xl mt-2 opacity-80 font-sniglet tracking-wider"
-            ></p>
+        ) : (
+          <div className="flex flex-col w-full h-fit">
+            <div className="h-[36rem] bg-[#bdb29696] rounded-2xl">
+              <img
+                src={step.image}
+                className="w-full h-full object-cover rounded-2xl border-2 border-black"
+              />
+            </div>
+            <div className="max-w-5xl">
+              <h1 className="text-4xl font-bold text-black mt-8">
+                {step.title}
+              </h1>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: step.desc,
+                }}
+                className="text-xl mt-2 opacity-80 font-sniglet tracking-wider"
+              ></p>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* 🐰 ---------- NAVIGATION ----------- 🐰 */}
         <div className="flex flex-row justify-between h-full items-end">

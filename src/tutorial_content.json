@@ -1,6 +1,10 @@
 {
   "chatbot_tutorial": [
     {
+      "video": "/src/assets/projects/chatbot.mp4",
+      "title": "Chatbot Preview"
+    },
+    {
       "image": "/src/assets/projects/chatbot/one.jpeg",
       "title": "1. Buat Project Baru di Google Colab",
       "desc": "Buka <a class='link'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
@@ -37,6 +41,10 @@
     }
   ],
   "pictoblox_tutorial": [
+    {
+      "video": "/src/assets/projects/picto.mp4",
+      "title": "Face Recognition Preview"
+    },
     {
       "image": "/src/assets/projects/pictoblox/one.png",
       "title": "1. Buat Project Baru di Pictoblox AI",
@@ -79,6 +87,10 @@
     }
   ],
   "game_tutorial": [
+    {
+      "video": "/src/assets/projects/construct3.mp4",
+      "title": "Shooting Game Preview"
+    },
     {
       "image": "/src/assets/projects/construct3/one.png",
       "title": "1. Buat Project Baru di Construct 3",
