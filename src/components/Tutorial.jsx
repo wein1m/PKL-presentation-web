@@ -38,12 +38,25 @@ export default function Tutorial({ index, setIndex, kill }) {
     setStepId(0);
   };
 
+  useEffect(() => {
+    const close = (e) => {
+      if (e.key === "Escape") {
+        kill();
+      }
+    };
+
+    document.addEventListener("keydown", close);
+
+    return () => document.removeEventListener("keydown", close);
+  }, []);
+
   return (
-    <div
-      id="tutorial"
-      className="flex absolute inset-0 items-center justify-center bg-black/50 z-[999] no-slide-nav overflow-hidden hover:cursor-default"
-    >
-      <div className="relative flex flex-col justify-between gap-6 p-10 bg-[#f9f2e9] w-[80rem] h-[54rem] rounded-3xl">
+    <div className="flex absolute inset-0 items-center justify-center no-slide-nav overflow-hidden hover:cursor-default">
+      <div
+        onClick={kill}
+        className="absolute inset-0 bg-black/50 z-[999] no-slide-nav hover:cursor-pointer"
+      />
+      <div className="relative flex flex-col justify-between gap-6 p-10 bg-[#f9f2e9] w-[80rem] h-[54rem] rounded-3xl z-[1000]">
         {/* 🐰 ---------- CONTENTS ----------- 🐰 */}
         {stepId === 0 ? (
           <div className="flex flex-col mx-auto  w-full h-fit -m-2">
