@@ -82,12 +82,22 @@
     {
       "image": "/src/assets/projects/construct3/one.png",
       "title": "1. Buat Project Baru di Construct 3",
-      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+      "desc": "Buka <a class='link'>construct.net</a> dan buat project baru dengan menekan tombol \"New\" dan melakukan setup seperti pada gambar (untuk nama project bisa bebas)."
     },
     {
-      "image": "/src/assets/projects/chatbot/two.jpeg",
-      "title": "2. Download Library Groq",
-      "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+      "image": "/src/assets/projects/construct3/two.png",
+      "title": "2. Setup Sprites",
+      "desc": "Setelah project baru telah dibuat, dilanjutkan dengan meng-import sprites yang dibutuhkan, serta di posisi-kan seperti pada gambar, dan diberikan behavior yang sesuai."
+    },
+    {
+      "image": "/src/assets/projects/construct3/three.png",
+      "title": "3. Buat Kode Gerakan",
+      "desc": "Setelah selesai mengatur sprites, masuk ke tab <a style='font-style: italic'>event sheet</a> dan buat kode untuk meng-handle gerakan user & goblin."
+    },
+    {
+      "image": "/src/assets/projects/construct3/four.png",
+      "title": "4. Buat Kode Attack",
+      "desc": "Terakhir, kita buat kode untuk menyerang goblin, handler untuk goblin setelah terserang, serta reset game setelah kalah."
     }
   ]
 }
