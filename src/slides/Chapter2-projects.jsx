@@ -12,6 +12,7 @@ import rocket from "../assets/elements/rocket.png";
 import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
 import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 import Tutorial from "../components/Tutorial";
+import { useState } from "react";
 
 export default function Chapter2Projects() {
   const projects = [
@@ -43,6 +44,14 @@ export default function Chapter2Projects() {
       rotate: "-rotate-1",
     },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [tutorialId, setTutorialId] = useState(0);
+
+  const openModal = (e) => {
+    setTutorialId(parseInt(e.currentTarget.dataset.index));
+    setIsOpen(true);
+  };
 
   const handleMouseEnter = (e) => {
     const video = e.currentTarget.querySelector("video");
@@ -99,6 +108,8 @@ export default function Chapter2Projects() {
         <div className="w-full flex items-center gap-8 z-999">
           {projects.map((project, index) => (
             <div
+              onClick={openModal}
+              data-index={index}
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -178,7 +189,13 @@ export default function Chapter2Projects() {
         className="absolute top-16 right-24 w-[8rem] rotate-12"
       />
 
-      <Tutorial />
+      {isOpen && (
+        <Tutorial
+          index={tutorialId}
+          setIndex={setTutorialId}
+          kill={() => setIsOpen(false)}
+        />
+      )}
     </section>
   );
 }

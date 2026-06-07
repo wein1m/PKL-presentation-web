@@ -88,7 +88,9 @@ body {
   }
 
   .bookmark-tabs {
-    @apply relative bg-pink-400 text-white pr-10 pl-4 py-2 h-10 font-bold tracking-widest;
+    @apply relative bg-pink-400 text-white pr-10 pl-4 py-2 h-10 w-full font-bold tracking-widest;
+    @apply hover:pl-6 hover:cursor-pointer duration-400 transition-all whitespace-nowrap;
+    @apply selection:bg-red-500;
     clip-path: polygon(0 0, 90% 0, 82% 50%, 90% 100%, 0 100%);
   }
 }

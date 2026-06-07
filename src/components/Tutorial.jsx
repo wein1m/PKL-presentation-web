@@ -1,71 +1,134 @@
+import { useEffect, useState } from "react";
 import one from "../assets/projects/chatbot/one.jpeg";
+import data from "../tutorial_content.json";
 
-export default function Tutorial() {
+export default function Tutorial({ index, setIndex, kill }) {
+  const [stepId, setStepId] = useState(0);
+
+  useEffect(() => {
+    setStepId(0);
+  }, [index]);
+
+  let currTutorial;
+  switch (index) {
+    case 0:
+      currTutorial = data.chatbot_tutorial;
+      break;
+    case 1:
+      currTutorial = data.pictoblox_tutorial;
+      break;
+    case 2:
+      currTutorial = data.game_tutorial;
+      break;
+    default:
+      break;
+  }
+  const step = currTutorial[stepId];
+
+  const nextStep = () => {
+    if (stepId < currTutorial.length - 1) {
+      setStepId((prev) => prev + 1);
+    }
+  };
+
+  const prevStep = () => {
+    if (stepId > 0) {
+      setStepId((prev) => prev - 1);
+    }
+  };
+
   return (
-    <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-[999] no-slide-nav overflow-hidden">
-      <div className="relative flex flex-col gap-8 p-10 bg-[#f9f2e9] w-[80rem] h-fit rounded-3xl">
+    <div
+      id="tutorial"
+      className="flex absolute inset-0 items-center justify-center bg-black/50 z-[999] no-slide-nav overflow-hidden hover:cursor-default"
+    >
+      <div className="relative flex flex-col justify-between gap-6 p-10 bg-[#f9f2e9] w-[80rem] h-[54rem] rounded-3xl">
         {/* 🐰 ---------- CONTENTS ----------- 🐰 */}
-        <div className="flex flex-col w-full h-full">
+        <div className="flex flex-col w-full h-fit">
           <div className="h-[36rem]">
             <img
-              src={one}
-              className="w-full h-full object-cover rounded-2xl border border-black"
+              src={step.image}
+              className="w-full h-full object-cover rounded-2xl border-2 border-black"
             />
           </div>
           <div className="max-w-5xl">
-            <h1 className="text-4xl font-bold text-black mt-8">
-              1. Buat Project baru di Google Colab
-            </h1>
-            <p className="text-xl mt-2 opacity-80 font-sniglet tracking-wider">
-              Buka <a className="text-[#323cbe] underline">Google Collab </a>{" "}
-              dan buat project baru dengan menekan tombol "New Notebook".
-              Pastikan sudah login dengan akun Google-mu.
-            </p>
+            <h1 className="text-4xl font-bold text-black mt-8">{step.title}</h1>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: step.desc,
+              }}
+              className="text-xl mt-2 opacity-80 font-sniglet tracking-wider"
+            ></p>
           </div>
+        </div>
 
-          {/* 🐰 ---------- NAVIGATION ----------- 🐰 */}
-          <div className="flex flex-row justify-between mt-8">
-            <div className="flex flex-row justify-center items-center gap-2 text-lg font-sniglet tracking-widest text-white bg-black rounded-full py-2 px-6 opacity-70">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  fill="currentColor"
-                  d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"
-                />
-              </svg>
-              Prev Page
-            </div>
-            <div className="flex flex-row justify-center items-center gap-2 text-lg font-sniglet tracking-widest text-white bg-black rounded-full py-2 px-6">
-              Next Page
-              <svg
-                className="rotate-180"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 1024 1024"
-              >
-                <path
-                  fill="currentColor"
-                  d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"
-                />
-              </svg>
-            </div>
+        {/* 🐰 ---------- NAVIGATION ----------- 🐰 */}
+        <div className="flex flex-row justify-between h-full items-end">
+          <div
+            onClick={prevStep}
+            className={`h-fit flex flex-row justify-center items-center gap-2 text-lg font-sniglet tracking-widest text-white bg-black rounded-full py-2 px-6 ${stepId === 0 ? "opacity-70" : ""}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"
+              />
+            </svg>
+            Prev Page
+          </div>
+          <div
+            onClick={nextStep}
+            className={`h-fit flex flex-row justify-center items-center gap-2 text-lg font-sniglet tracking-widest text-white bg-black rounded-full py-2 px-6 ${stepId == currTutorial.length - 1 ? "opacity-70" : ""}`}
+          >
+            Next Page
+            <svg
+              className="rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"
+              />
+            </svg>
           </div>
         </div>
 
         {/* 🐰 ---------- MARKER ----------- 🐰 */}
-        <div className="absolute top-20 -right-40">
-          <div className="bookmark-tabs">AI Chatbot</div>
-          <div className="bookmark-tabs bg-blue-400 mt-4 w-10"></div>
-          <div className="bookmark-tabs bg-green-400 mt-4 w-10"></div>
+        <div className="absolute top-20 -right-46">
+          <div className="flex flex-col gap-4 w-46">
+            <div
+              onClick={() => setIndex(0)}
+              className={`bookmark-tabs ${index != 0 ? "w-10 text-transparent" : "hover:pl-4"}`}
+            >
+              AI Chatbot
+            </div>
+            <div
+              onClick={() => setIndex(1)}
+              className={`bookmark-tabs ${index != 1 ? "w-10 text-transparent" : "hover:pl-4"} bg-blue-400`}
+            >
+              PictoBlox AI
+            </div>
+            <div
+              onClick={() => setIndex(2)}
+              className={`bookmark-tabs ${index != 2 ? "w-10 text-transparent" : "hover:pl-4"} bg-green-400`}
+            >
+              Construct 3
+            </div>
+          </div>
         </div>
 
         {/* 🐰 ---------- CLOSE BTN ----------- 🐰 */}
-        <div className="absolute -top-5 -left-5 bg-[#dd3f5d] rounded-full p-3 text-white font-sniglet tracking-widest text-lg flex flex-row gap-2 justify-center items-center aspect-square">
+        <div
+          onClick={kill}
+          className="absolute -top-5 -left-5 bg-[#dd3f5d] rounded-full p-3 text-white font-sniglet tracking-widest text-lg flex flex-row gap-2 justify-center items-center aspect-square hover:cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"

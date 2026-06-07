@@ -1,0 +1,38 @@
+{
+  "chatbot_tutorial": [
+    {
+      "image": "/src/assets/projects/chatbot/one.jpeg",
+      "title": "1. Buat Project Baru di Google Colab",
+      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/two.jpeg",
+      "title": "2. Download Library Groq",
+      "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+    }
+  ],
+  "pictoblox_tutorial": [
+    {
+      "image": "/src/assets/projects/pictoblox/one.png",
+      "title": "1. Buat Project Baru di Pictoblox",
+      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/two.jpeg",
+      "title": "2. Download Library Groq",
+      "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+    }
+  ],
+  "game_tutorial": [
+    {
+      "image": "/src/assets/projects/construct3/one.png",
+      "title": "1. Buat Project Baru di Construct 3",
+      "desc": "Buka <a style='color:#323cbe; text-decoration:underline;'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
+    },
+    {
+      "image": "/src/assets/projects/chatbot/two.jpeg",
+      "title": "2. Download Library Groq",
+      "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
+    }
+  ]
+}
