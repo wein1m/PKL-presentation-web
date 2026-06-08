@@ -79,7 +79,7 @@ body {
   }
 
   .cards-container {
-    @apply grid grid-cols-2 gap-4;
+    @apply grid grid-cols-2 gap-2;
   }
 
   .small-pill-wrapper {

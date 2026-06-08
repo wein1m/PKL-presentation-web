@@ -34,15 +34,17 @@ export default function Chapter2Ext() {
           </div>
 
           <p className="desc">
-            Koding Akademi merupakan perusahaan yang bergerak di bidang
-            teknologi dan pendidikan digital, dengan fokus pada pengembangan
-            website, aplikasi, dan pembelajaran programming modern.
+            Koding Akademi by MediaTech merupakan perusahaan edutech yang
+            menyediakan layanan course coding, robotics, serta pengembangan
+            website dan aplikasi. Perusahaan ini didirikan pada tahun 2009
+            sebagai anak perusahaan MediaTech Indonesia dan telah hadir di lebih
+            dari 5 kota di Indonesia.
           </p>
 
           <div className="cards-container">
             <div className="transparent-card">
               <p>Pimpinan</p>
-              <h3>...</h3>
+              <h3>A.A Gde Rai Adi Putra,Dipl-Inf.</h3>
             </div>
 
             <div className="transparent-card">
@@ -62,6 +64,13 @@ export default function Chapter2Ext() {
             className="absolute -top-20 right-16 -rotate-12 w-44"
           />
         </div>
+      </div>
+
+      {/* 🐰 ---------- CHAPTER TITLE & IMAGES ----------- 🐰 */}
+      <div className="absolute top-5 left-1/2 -translate-x-1/2">
+        <h1 className="font-sniglet tracking-widest text-lg">
+          Bab 2. Tinjauan Umum Perusahaan
+        </h1>
       </div>
 
       <img

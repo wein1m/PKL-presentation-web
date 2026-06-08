@@ -59,7 +59,10 @@ export default function Chapter2Int() {
             </div>
           </div>
 
-          <img src={dorritos} className="absolute -top-18 -right-12 -rotate-4 w-44" />
+          <img
+            src={dorritos}
+            className="absolute -top-18 -right-12 -rotate-4 w-44"
+          />
         </div>
 
         {/* 🐰 ---------- RIGHT SIDE ----------- 🐰 */}
@@ -81,6 +84,13 @@ export default function Chapter2Int() {
             />
           </div>
         </div>
+      </div>
+
+      {/* 🐰 ---------- CHAPTER TITLE & IMAGES ----------- 🐰 */}
+      <div className="absolute top-5 left-1/2 -translate-x-1/2">
+        <h1 className="font-sniglet tracking-widest text-lg">
+          Bab 2. Tinjauan Umum Perusahaan
+        </h1>
       </div>
 
       <img

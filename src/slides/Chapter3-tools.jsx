@@ -102,6 +102,13 @@ export default function Chapter3Tools() {
         </div>
       </div>
 
+      {/* 🐰 ---------- CHAPTER TITLE & IMAGES ----------- 🐰 */}
+      <div className="absolute top-5 left-1/2 -translate-x-1/2">
+        <h1 className="font-sniglet tracking-widest text-lg">
+          Bab 3. Pelaksanaan Praktek Kerja Lapangan
+        </h1>
+      </div>
+
       <img
         src={wavingLeftBot}
         alt=""

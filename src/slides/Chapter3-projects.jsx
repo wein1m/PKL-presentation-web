@@ -94,7 +94,7 @@ export default function Chapter3Projects() {
           <p className="desc">
             Selama kegiatan PKL di Koding Akademi, saya mengerjakan berbagai
             project berbasis AI, game development, dan pembelajaran coding
-            interaktif untuk siswa SMP dan SMA.
+            interaktif.
           </p>
 
           <img
@@ -169,6 +169,13 @@ export default function Chapter3Projects() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* 🐰 ---------- CHAPTER TITLE & IMAGES ----------- 🐰 */}
+      <div className="absolute top-5 left-1/2 -translate-x-1/2">
+        <h1 className="font-sniglet tracking-widest text-lg">
+          Bab 3. Pelaksanaan Praktek Kerja Lapangan
+        </h1>
       </div>
 
       <img
