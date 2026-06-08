@@ -10,7 +10,7 @@ import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
 import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 import rocket from "../assets/elements/rocket.png";
 
-export default function Chapter1Int() {
+export default function Chapter2Int() {
   const images = [int2, int1, int3, int4];
 
   const transformStyles = [

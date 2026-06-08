@@ -14,7 +14,7 @@ import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 import Tutorial from "../components/Tutorial";
 import { useState } from "react";
 
-export default function Chapter2Projects() {
+export default function Chapter3Projects() {
   const projects = [
     {
       title: "AI Chatbot App",

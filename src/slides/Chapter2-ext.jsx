@@ -5,7 +5,7 @@ import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 import dorritos from "../assets/elements/dorritos.png";
 import rocket from "../assets/elements/rocket.png";
 
-export default function Chapter1() {
+export default function Chapter2Ext() {
   return (
     <section className="page-wrapper">
       <div className="content-wrapper gap-20">

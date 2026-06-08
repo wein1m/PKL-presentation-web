@@ -10,7 +10,7 @@ import rocket from "../assets/elements/rocket.png";
 import wavingLeftBot from "../assets/elements/waving-bottom_left.png";
 import pointingRightBot from "../assets/elements/pointing-bottom_right.png";
 
-export default function Chapter2Tools() {
+export default function Chapter3Tools() {
   const tools = [
     {
       title: "Minecraft Education",

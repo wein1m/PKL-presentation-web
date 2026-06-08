@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 
 import Cover from "./slides/Cover";
-import Chapter1Ext from "./slides/Chapter1-ext";
-import Chapter1Int from "./slides/Chapter1-int";
-import Chapter2Tools from "./slides/Chapter2-tools";
-import Chapter2Projects from "./slides/Chapter2-projects";
+import Chapter1 from "./slides/Chapter1";
+import Chapter2Ext from "./slides/Chapter2-ext";
+import Chapter2Int from "./slides/Chapter2-int";
+import Chapter3Tools from "./slides/Chapter3-tools";
+import Chapter3Projects from "./slides/Chapter3-projects";
 import End from "./slides/End";
 
 import Cursor from "./Cursor";
@@ -46,10 +47,11 @@ export default function App() {
 
   const slides = [
     Cover,
-    Chapter1Ext,
-    Chapter1Int,
-    Chapter2Tools,
-    Chapter2Projects,
+    Chapter1,
+    Chapter2Ext,
+    Chapter2Int,
+    Chapter3Tools,
+    Chapter3Projects,
     End,
   ];
 
