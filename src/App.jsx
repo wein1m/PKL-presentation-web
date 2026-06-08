@@ -7,6 +7,7 @@ import Chapter1 from "./slides/Chapter1";
 
 import IntroChapter2 from "./slides/Intro-Chapter2";
 import Chapter2Ext from "./slides/Chapter2-ext";
+import Chapter2VisionMission from "./slides/Chapter2-VisionMission";
 import Chapter2Int from "./slides/Chapter2-int";
 
 import IntroChapter3 from "./slides/Intro-Chapter3";
@@ -61,6 +62,7 @@ export default function App() {
     Chapter1,
     IntroChapter2,
     Chapter2Ext,
+    Chapter2VisionMission,
     Chapter2Int,
     IntroChapter3,
     Chapter3Tools,
