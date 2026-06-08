@@ -12,6 +12,7 @@ import Chapter2Int from "./slides/Chapter2-int";
 import IntroChapter3 from "./slides/Intro-Chapter3";
 import Chapter3Tools from "./slides/Chapter3-tools";
 import Chapter3Projects from "./slides/Chapter3-projects";
+import Chapter3Schedule from "./slides/Chapter3-schedule";
 
 import IntroChapter4 from "./slides/Intro-Chapter4";
 import Chapter4Closing from "./slides/Chapter4-closing";
@@ -64,6 +65,7 @@ export default function App() {
     IntroChapter3,
     Chapter3Tools,
     Chapter3Projects,
+    Chapter3Schedule,
     IntroChapter4,
     Chapter4Closing,
     End,
