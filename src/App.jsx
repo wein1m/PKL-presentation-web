@@ -1,19 +1,25 @@
 import { useState, useEffect, useRef } from "react";
 
 import Cover from "./slides/Cover";
+
 import IntroChapter1 from "./slides/Intro-Chapter1";
 import Chapter1 from "./slides/Chapter1";
+
+import IntroChapter2 from "./slides/Intro-Chapter2";
 import Chapter2Ext from "./slides/Chapter2-ext";
 import Chapter2Int from "./slides/Chapter2-int";
+
+import IntroChapter3 from "./slides/Intro-Chapter3";
 import Chapter3Tools from "./slides/Chapter3-tools";
 import Chapter3Projects from "./slides/Chapter3-projects";
+
+import IntroChapter4 from "./slides/Intro-Chapter4";
+import Chapter4Closing from "./slides/Chapter4-closing";
 import End from "./slides/End";
 
 import Cursor from "./Cursor";
 import MobileWarning from "./MobileWarning";
 import DebugSize from "./DebugSize";
-import IntroChapter2 from "./slides/Intro-Chapter2";
-import IntroChapter3 from "./slides/Intro-Chapter3";
 
 const DEFAULT_WIDTH = 1764;
 const DEFAULT_HEIGHT = 974;
@@ -58,6 +64,8 @@ export default function App() {
     IntroChapter3,
     Chapter3Tools,
     Chapter3Projects,
+    IntroChapter4,
+    Chapter4Closing,
     End,
   ];
 
