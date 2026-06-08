@@ -1,113 +1,113 @@
 {
   "chatbot_tutorial": [
     {
-      "video": "/src/assets/projects/chatbot.mp4",
+      "video": "/projects/chatbot/chatbot.mp4",
       "title": "Chatbot Preview"
     },
     {
-      "image": "/src/assets/projects/chatbot/one.jpeg",
+      "image": "/projects/chatbot/one.jpeg",
       "title": "1. Buat Project Baru di Google Colab",
       "desc": "Buka <a class='link'>Google Colab</a> dan buat project baru dengan menekan tombol \"New Notebook\". Pastikan sudah login dengan akun google-mu."
     },
     {
-      "image": "/src/assets/projects/chatbot/two.jpeg",
+      "image": "/projects/chatbot/two.jpeg",
       "title": "2. Menginstall Library Groq",
       "desc": "Setelah membuat project baru, dilanjutkan dengan mendownload library yang dibutuhkan."
     },
     {
-      "image": "/src/assets/projects/chatbot/three.jpeg",
+      "image": "/projects/chatbot/three.jpeg",
       "title": "3. Masuk dan Buat Akun Groq",
       "desc": "Dilanjutkan dengan membuka website <a class='link'>console.groq.com</a> dan login menggunakan akun <a style='font-style: italic'>Google / Github / Email</a> anda."
     },
     {
-      "image": "/src/assets/projects/chatbot/four.jpeg",
+      "image": "/projects/chatbot/four.jpeg",
       "title": "4. Import API Key",
       "desc": "Setelah memiliki akun, dilanjutkan ke <a style='font-style: italic'>page API Keys</a> untuk membuat API Key. Masukan semua informasi yang dibutuhkan, lalu klik submit dan copy API Key anda."
     },
     {
-      "image": "/src/assets/projects/chatbot/five.jpeg",
+      "image": "/projects/chatbot/five.jpeg",
       "title": "5. Masukkan API Key Kedalam Code",
       "desc": "Kemudian masukkan API Key yang anda dapatkan sebelumnya, dengan cara buat cell dibawahnya lalu ikuti kode seperti pada gambar (ingat untuk mengganti API Key dengan punya anda)."
     },
     {
-      "image": "/src/assets/projects/chatbot/six.jpeg",
+      "image": "/projects/chatbot/six.jpeg",
       "title": "6. Membuat Program Chatbot",
       "desc": "Setelah selesai melakukan setup Groq, dilanjutkan dengan membuat code untuk menggunakan Groq kedalam program <a style='font-style: italic'>Chatbot</a>."
     },
     {
-      "image": "/src/assets/projects/chatbot/seven.jpeg",
+      "image": "/projects/chatbot/seven.jpeg",
       "title": "7. Hasil Akhir Program",
       "desc": "Setelah semua langkah sudah selesai dilakukan, <a style='font-style: italic'>Chatbot</a> kita sudah siap digunakan. Pengguna dapat menanyakan hal apapun kepada <a style='font-style: italic'>Chatbot</a> kita."
     }
   ],
   "pictoblox_tutorial": [
     {
-      "video": "/src/assets/projects/picto.mp4",
+      "video": "/projects/pictoblox/picto.mp4",
       "title": "Face Recognition Preview"
     },
     {
-      "image": "/src/assets/projects/pictoblox/one.png",
+      "image": "/projects/pictoblox/one.png",
       "title": "1. Buat Project Baru di Pictoblox AI",
       "desc": "Buka <a class='link'>pictoblox.ai</a> dan buat project baru dengan memilih opsi \"Blocks\" di bagian kiri (Block Coding)."
     },
     {
-      "image": "/src/assets/projects/pictoblox/two.png",
+      "image": "/projects/pictoblox/two.png",
       "title": "2. Ganti Sprites dan Backdrops",
       "desc": "Setelah membuat project baru, dilanjutkan dengan menambahkan sprites & backdrop seperti yang ditunjukkan pada gambar. Ingat untuk menghapus sprite default yang diberikan!"
     },
     {
-      "image": "/src/assets/projects/pictoblox/three.png",
+      "image": "/projects/pictoblox/three.png",
       "title": "3. Install Face Detection Extension",
       "desc": "Sebelum memulai membuat program, kita perlu menambahkan terlebih dahulu <a style='font-style: italic'>Face Detection Extension</a> agar dapat melakukan face detection pada program kita nanti."
     },
     {
-      "image": "/src/assets/projects/pictoblox/four.png",
+      "image": "/projects/pictoblox/four.png",
       "title": "4. Buat Kode Sambutan",
       "desc": "Setelah selesai melakukan semua setup project kita, dilanjutkan dengan meng-klik sprite <a style='font-style: italic'>Isaac</a> dan membuat kode untuk sambutan user, serta mengembalikan <a style='font-style: italic'>project states</a> menjadi default."
     },
     {
-      "image": "/src/assets/projects/pictoblox/five.png",
+      "image": "/projects/pictoblox/five.png",
       "title": "5. Kode untuk Button 2 (Register Face)",
       "desc": "Kemudian klik sprite <a style='font-style: italic'>Button 2</a> dan melakukan inisialisasi sprite dan memberi signal <a style='font-style: italic'>register_face</a> ketika di klik."
     },
     {
-      "image": "/src/assets/projects/pictoblox/six.png",
+      "image": "/projects/pictoblox/six.png",
       "title": "6. Kode untuk Button (Enter School)",
       "desc": "Dilanjutkan dengan sprite <a style='font-style: italic'>Button</a> dan melakukan inisialisasi sprite dan memberi signal <a style='font-style: italic'>enter_school</a> ketika di klik."
     },
     {
-      "image": "/src/assets/projects/pictoblox/seven.png",
+      "image": "/projects/pictoblox/seven.png",
       "title": "7. Proses register_face",
       "desc": "Selanjutnya, kembali ke sprite <a style='font-style: italic'>Isaac</a> dan buat kode untuk menambahkan wajah kedalam database."
     },
     {
-      "image": "/src/assets/projects/pictoblox/eight.png",
+      "image": "/projects/pictoblox/eight.png",
       "title": "8. Proses enter_school",
       "desc": "Terakhir, kita buat kode untuk melakukan pengecekan, apakah wajah yang ter-detect kamera tersimpan dalam database? jika iya, maka user bisa masuk ke kelas, jika tidak, maka beri output saja."
     }
   ],
   "game_tutorial": [
     {
-      "video": "/src/assets/projects/construct3.mp4",
+      "video": "/projects/construct3/construct3.mp4",
       "title": "Shooting Game Preview"
     },
     {
-      "image": "/src/assets/projects/construct3/one.png",
+      "image": "/projects/construct3/one.png",
       "title": "1. Buat Project Baru di Construct 3",
       "desc": "Buka <a class='link'>construct.net</a> dan buat project baru dengan menekan tombol \"New\" dan melakukan setup seperti pada gambar (untuk nama project bisa bebas)."
     },
     {
-      "image": "/src/assets/projects/construct3/two.png",
+      "image": "/projects/construct3/two.png",
       "title": "2. Setup Sprites",
       "desc": "Setelah project baru telah dibuat, dilanjutkan dengan meng-import sprites yang dibutuhkan, serta di posisi-kan seperti pada gambar, dan diberikan behavior yang sesuai."
     },
     {
-      "image": "/src/assets/projects/construct3/three.png",
+      "image": "/projects/construct3/three.png",
       "title": "3. Buat Kode Gerakan",
       "desc": "Setelah selesai mengatur sprites, masuk ke tab <a style='font-style: italic'>event sheet</a> dan buat kode untuk meng-handle gerakan user & goblin."
     },
     {
-      "image": "/src/assets/projects/construct3/four.png",
+      "image": "/projects/construct3/four.png",
       "title": "4. Buat Kode Attack",
       "desc": "Terakhir, kita buat kode untuk menyerang goblin, handler untuk goblin setelah terserang, serta reset game setelah kalah."
     }

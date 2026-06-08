@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import one from "../assets/projects/chatbot/one.jpeg";
 import data from "../tutorial_content.json";
 
 export default function Tutorial({ index, setIndex, kill }) {

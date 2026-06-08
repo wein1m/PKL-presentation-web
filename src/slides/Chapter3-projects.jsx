@@ -1,11 +1,11 @@
-import chatbotThumb from "../assets/projects/chatbot-thumb.png";
-import chatbotVideo from "../assets/projects/chatbot.mp4";
+import chatbotThumb from "/projects/chatbot/chatbot-thumb.png";
+import chatbotVideo from "/projects/chatbot/chatbot.mp4";
 
-import aiThumb from "../assets/projects/picto-thumb.png";
-import aiVideo from "../assets/projects/picto.mp4";
+import aiThumb from "/projects/pictoblox/picto-thumb.png";
+import aiVideo from "/projects/pictoblox/picto.mp4";
 
-import gameThumb from "../assets/projects/construct3-thumb.png";
-import gameVideo from "../assets/projects/construct3.mp4";
+import gameThumb from "/projects/construct3/construct3-thumb.png";
+import gameVideo from "/projects/construct3/construct3.mp4";
 
 import dorritos from "../assets/elements/dorritos.png";
 import rocket from "../assets/elements/rocket.png";
